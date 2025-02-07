@@ -9,5 +9,4 @@ This repository contains my learning notes on Docker.
 - [Advanced Commands](docs/advanced-commands.md)  
 - [Troubleshooting](docs/troubleshooting.md)  
 
-More content coming soon! 🚀  
-
+More content coming soon! 🚀
