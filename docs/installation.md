@@ -35,7 +35,7 @@ docker images
 
 ---
 
-### 4. Run a Container  
+## 4. Run a Container  
 To create and run a container using the **BusyBox** image:  
 ```sh
 docker run busybox
@@ -44,5 +44,34 @@ docker run busybox
 If nothing happens in the command prompt, that means Docker created the container and ran the command. Since no command was specified, the container was created and exited immediately.  
 
 ---
+
+## 5. Delete Containers  
+
+### Delete a Specific Container  
+```sh
+docker rm <ContainerID>
+```
+On deletion, you should see the container ID echoed back.  
+
+### 6. Delete All Exited Containers  
+```sh
+docker rm $(docker ps -a -q -f status=exited)
+```
+- `-q` flag returns only numeric container IDs.  
+- `-f` flag filters output based on the specified condition (in this case, `status=exited`).  
+
+### 7. Prune Unused Containers  
+```sh
+docker container prune
+```
+This command removes all stopped containers.  
+
+### 8. Delete an Image  
+```sh
+docker rmi busybox
+```
+This removes the **BusyBox** image from the system.  
+
+
 
 ### More Commands Coming Soon 🚀  
