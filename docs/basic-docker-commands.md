@@ -78,6 +78,12 @@ docker system df
 ```
 This will show how much space is taken by docker in your system
 
+### 10. Removes build cache
+```sh
+docker builder prune
+```
+
+
 
 
 ### More Commands Coming Soon 🚀  
