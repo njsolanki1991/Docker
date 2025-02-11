@@ -18,8 +18,10 @@ First, create a simple `index.html` file inside a new directory (e.g., `docker-h
 </head>
 <body>
     <h1>Welcome to my Dockerized HTML Page!</h1>
+    <h1>This is me learning how to docker!!!</h1>
 </body>
 </html>
+
 ```
 
 Save this file inside the `docker-html` directory.
@@ -32,27 +34,24 @@ Inside the same `docker-html` directory, create a `Dockerfile`:
 
 ```dockerfile
 # Use an official Nginx image
-FROM nginx:latest  
+FROM nginx  
 
 # Copy HTML file to Nginx default directory
 COPY index.html /usr/share/nginx/html/
-
-# Expose port 80
-EXPOSE 80
 ```
 
 ---
 
 ## 3. Build the Docker Image
 
-Navigate to the `docker-html` directory and build the Docker image:
+Navigate to the `docker-html` directory and build the Docker image named "image-name":
 
 ```sh
-docker build -t my-html-site .
+docker build -t image-name .
 ```
 
 ### Explanation:
-- Creates a Docker image named `my-html-site`.
+- Creates a Docker image named `image-name`.
 - Copies the `index.html` file into the Nginx web server’s default directory.
 
 ---
@@ -62,7 +61,7 @@ docker build -t my-html-site .
 Once the image is built, run a container using:
 
 ```sh
-docker run -d -p 8080:80 --name my-html-container my-html-site
+docker run -d -p 8080:80 --name my-html-container image-name
 ```
 
 ### Explanation:
@@ -102,4 +101,4 @@ docker rm my-html-container
 To remove the image:
 
 ```sh
-docker rmi my-html-site
+docker rmi image-name
