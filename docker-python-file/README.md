@@ -7,8 +7,8 @@ This guide explains how to containerize a simple python file using Docker and Ng
 ## 1. Create a Python File
 
 First, create a simple `app.py` file inside a new directory (e.g., `docker-python-file`).
-
-```print("Hello from Dockerized Python!")
+```sh
+print("Hello from Dockerized Python!")
 ```
 
 Save this file inside the `docker-python-file` directory.
