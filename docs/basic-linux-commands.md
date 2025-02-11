@@ -1,7 +1,7 @@
 ## 📚 Basic Linux Commands 🐧
 
 ### 📂 File & Directory Management
-- `whoami` → Show the current user.
+- `whoami` → Shows the current user.
 - `pwd` → Print the current working directory.
 - `mkdir xyz` → Create a new directory named 'xyz'.
 - `cd xyz` → Go into the 'xyz' directory.
