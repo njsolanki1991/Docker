@@ -72,6 +72,12 @@ docker rmi busybox
 ```
 This removes the **BusyBox** image from the system.  
 
+### 9. Check space taken by docker
+```sh
+docker system df
+```
+This will show how much space is taken by docker in your system
+
 
 
 ### More Commands Coming Soon 🚀  
