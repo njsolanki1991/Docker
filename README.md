@@ -16,5 +16,5 @@ This repository contains my learning notes on Docker, including tutorials and co
 - [`basic-docker-commands`](./docs/basic-docker-commands.md) – A reference for essential Docker commands.
 - [`basic-linux-commands`](./docs/basic-linux-commands.md) – A reference for essential Linux commands.
 
-- More content coming soon! 🚀
+# More content coming soon! 🚀
 
