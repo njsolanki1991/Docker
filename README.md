@@ -13,8 +13,8 @@ This repository contains my learning notes on Docker, including tutorials and co
 - Includes a `Dockerfile` to serve the HTML file via Nginx.
 
 ### 3️⃣ [Docs](./docs/)
-- `basic-docker-commands.txt` – A reference for essential Docker commands.
-- `basic-linux-commands.txt` – A reference for essential Linux commands.
+- [`basic-docker-commands`](./docs/basic-docker-commands.txt) – A reference for essential Docker commands.
+- [`basic-linux-commands`](./docs/basic-linux-commands.txt) – A reference for essential Linux commands.
 
 - More content coming soon! 🚀
 
